@@ -1,0 +1,75 @@
+.accordions-main {
+    padding: 25px 55px 25px 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+}
+.accordion {
+    width: 400px;
+    min-height: 75px;
+    border: 1px solid #4d9104;
+    border-radius: 15px !important;
+    box-shadow: none !important;
+}
+.accordion div div p {
+    font-family: 'VK Sans Display' !important;
+}
+.accordion::before {
+    height: 0 !important;
+}
+.accordions-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.typography {
+    font-size: 17px !important;
+    color: rgb(122, 122, 122);
+}
+.accordion-text {
+    font-size: 17px !important;
+    color: rgb(122, 122, 122);
+}
+.mobile-accordions-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100px;
+}
+.mobile-more-btn {
+    color: #519c00;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 955px) {
+    .accordions-main {
+        padding: 25px 20px 25px 20px;
+    }
+    .accordion {
+        width: 100%;
+        min-height: 77px;
+    }
+}
+@media screen and (max-width: 810px) {
+    .accordion {
+        min-height: 100px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .accordions-main {
+        flex-direction: column;
+        align-items: center;
+        gap: 17px;
+    }
+    .accordion div div p {
+        font-size: 18px !important;
+    }
+}
+@media screen and (max-width: 640px) {
+    .accordion div div p {
+        font-size: 15px !important;
+    }
+}

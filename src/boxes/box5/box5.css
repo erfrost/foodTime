@@ -1,0 +1,75 @@
+.box-5-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box-5-content {
+    width: 100%;
+    padding: 25px 0 25px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box-5-switch {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.switch-text {
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(59, 59, 59)
+}
+.switch-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.switch-btn {
+    padding: 15px 28px 15px 28px;
+    border: 2px solid #4d9104;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #396C03;
+}
+.switch-btn:hover {
+    background-color: #4d9104;
+    border-color: #4d9104;
+    color: white;
+}
+.switch-active {
+    background-color: #396C03;
+    border-color: #396C03;
+    color: white;
+}
+
+@media screen and (max-width: 480px) {
+    .switch-text {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .switch-btn {
+        padding: 10px 25px 10px 25px;
+    }
+}
+@media screen and (max-width: 410px) {
+    .switch-text {
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 370px) {
+    .switch-text {
+        font-size: 20px;
+    }
+}

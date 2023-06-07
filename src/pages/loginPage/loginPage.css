@@ -1,0 +1,121 @@
+.login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.back-icon {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
+.login-box {
+    width: 500px /*30%*/;
+    height: 40%;
+    background-color: beige;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.forms {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+.form-text {
+    padding-left: 22px;
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(61, 61, 61);
+}
+.text-field-login {
+    padding-left: 22px;
+    width: 80% !important;
+}
+.text-field-login div {
+    border-radius: 15px !important;
+}
+.text-field-login div input {
+    font-family: 'VK Sans Display' !important;
+}
+.text-field-login div fieldset {
+    border: 2px solid #396C03 !important;
+    border-radius: 15px;
+}
+.form-control-label span {
+    font-family: 'VK Sans Display' !important;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+.text-field-login div fieldset legend {
+    max-width: 0 !important;
+}
+.already-account-box {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.already-account-text {
+    font-size: 13px;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-link {
+    text-decoration: none;
+    color: #396C03;
+    transition: all 0.3s;
+}
+.form-link:hover {
+    letter-spacing: 2px;
+}
+.submit-btn {
+    width: 80%;
+    height: 60px;
+    background-color: #396C03;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+.submit-btn:hover {
+    background-color: #4d9104;
+}
+.submit-btn-disabled {
+    background-color: #576d3f;
+    cursor: auto;
+}
+.submit-btn-disabled:hover {
+    background-color: #576d3f;
+}
+.submit-icon {
+    width: 40px !important;
+    height: 40px !important;
+    color: white;
+}
+
+@media screen and (max-width: 550px) {
+    .login-box {
+        width: 90%;
+    }
+    .form-text {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 410px) {
+    .back-icon {
+        top: 15px;
+        left: 15px;
+    }
+}

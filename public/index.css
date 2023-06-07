@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "VK Sans Display";
+    font-weight: 400;
+    src: url(./fonts/VKSansDisplay-Regular.ttf);
+}
+@font-face {
+    font-family: "VK Sans Display";
+    font-weight: 500;
+    src: url(./fonts/VKSansDisplay-Medium.ttf);
+}
+@font-face {
+    font-family: "VK Sans Display";
+    font-weight: 600;
+    src: url(.fonts/VKSansDisplay-DemiBold.ttf);
+}
+@font-face {
+    font-family: "VK Sans Display";
+    font-weight: 700;
+    src: url(./fonts/VKSansDisplay-Bold.ttf);
+}
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "VK Sans Display" !important;
+    letter-spacing: 0.5px;
+}
+#root {
+    font-family: "VK Sans Display" !important;
+}

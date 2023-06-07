@@ -1,0 +1,55 @@
+.box-7-content {
+    padding: 25px 55px 50px 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.Map {
+    width: 60%;
+    height: 600px;
+}
+.box-7-text {
+    font-size: 60px;
+    font-weight: 700;
+    color: #396C03;
+}
+
+@media screen and (max-width: 1200px) {
+    .box-7-text {
+        font-size: 45px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .box-7-content {
+        justify-content: center;
+    }
+    .Map {
+        width: 80%;
+        height: 600px;
+    }
+    .box-7-text {
+        display: none;
+    }
+}
+@media screen and (max-width: 770px) {
+    .box-7-content {
+        padding: 25px 20px 50px 20px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .Map {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .Map {
+        height: 450px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .box-7-content {
+        display: none;
+    }
+}

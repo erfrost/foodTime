@@ -1,0 +1,93 @@
+.box-6-content {
+    padding: 25px 55px 25px 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.box-6-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+}
+.box-6-text-1 {
+    font-size: 45px;
+    font-weight: 700;
+    color: #396C03;
+}
+.box-6-text-2 {
+    font-size: 24px;
+    line-height: 30px;
+    color: rgb(97, 97, 97);
+}
+.downloading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+.download-btn {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1400px) {
+    .box-6-image {
+        width: 600px;
+        height: 350px;
+    }
+}
+@media screen and (max-width: 1210px) {
+    .box-6-text-1 {
+        font-size: 40px;
+    }
+    .box-6-text-2 {
+        font-size: 25px;
+    }
+    .box-6-image {
+        width: 500px;
+        height: 250px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .box-6-image {
+        display: none;
+    }
+    .box-6-left {
+        max-width: 60%;
+    }
+}
+@media screen and (max-width: 770px) {
+    .box-6-content {
+        padding: 25px 20px 25px 20px;
+    }
+}
+@media screen and (max-width: 750px) {
+    .box-6-left {
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 650px) {
+    .box-6-left {
+        gap: 15px;
+    }
+    .box-6-text-1 {
+        font-size: 34px;
+    }
+    .box-6-text-2 {
+        font-size: 18px;
+    }
+    .download-btn {
+        width: 200px;
+        height: 75px;
+    }
+}
+@media screen and (max-width: 490px) {
+    .download-btn {
+        width: 130px;
+        height: 75px;
+    }
+}

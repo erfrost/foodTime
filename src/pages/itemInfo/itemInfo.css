@@ -1,0 +1,167 @@
+.itemInfo-main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.itemInfo-padding {
+    width: 1100px;
+    padding: 55px 55px 55px 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+}
+.searchItem {
+    width: 950px;
+    height: 450px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 15px;
+}
+.searchItem-padding {
+    height: calc(100% - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 40px 40px 40px;
+}
+.searchItem-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.searchItem-content-top {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 55px;
+}
+.searchItem-image {
+    width: 40%;
+    height: 100%;
+    background-image: url('../../assets/dish.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+.searchItem-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    font-size: 35px;
+    color: rgba(0, 0, 0, 0.7);
+}
+.category-link {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.searchItem-content-bottom {
+    display: flex;
+}
+.searchItem-counter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+}
+.counter {
+    width: 200px;
+    height: 75px;
+    color: white;
+    border-radius: 15px;
+    background-color: #396C03;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.counter:hover {
+    background-color: #4d9104;
+}
+.active-counter {
+    width: 200px;
+    height: 75px;
+    color: white;
+    border-radius: 15px;
+    background-color: #396C03;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.counter-number {
+    font-size: 30px;
+    color: white;
+}
+.price {
+    font-size: 35px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (max-width: 1060px) {
+    .searchItem {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 770px) {
+    .searchItem-image {
+        min-width: 200px;
+    }
+}
+@media screen and (max-width: 560px) {
+    .itemInfo-padding {
+        align-items: center;
+        padding: 20px 20px 20px 20px;
+    }
+    .searchItem {
+        height: auto;
+    }
+    .searchItem-info-title {
+        font-size: 20px;
+        margin-right: 40px;
+    }
+    .searchItem-content {
+        gap: 30px;
+    }
+    .searchItem-content-top {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .searchItem-image {
+        min-width: 100%;
+        min-height: 200px;
+    }
+    .searchItem-counter {
+        gap: 30px;
+    }
+    .counter {
+        width: 150px;
+        height: 45px;
+        font-size: 17px;
+    }
+    .price {
+        font-size: 29px;
+    }
+}
+@media screen and (max-width: 350px) {
+    .itemInfo-padding {
+        padding: 10px 10px 25px 10px;
+    }
+}
+@media screen and (max-width: 330px) {
+    .itemInfo-padding {
+        padding: 25px 5px 25px 5px;
+    }
+}

@@ -1,0 +1,14 @@
+.navigation-block {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.navigation-item {
+    font-size: 16px;
+    cursor: pointer;
+    color: #519c00;
+    text-decoration: none;
+}

@@ -1,0 +1,218 @@
+.cartPage {
+    padding: 25px 55px 25px 55px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.cartPage-title {
+    font-size: 32px;
+}
+.promocode {
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.promocode-textfield label {
+    color: #777c83 !important;
+}
+.promocode-textfield div {
+    border-radius: 5px 0 0 5px !important;
+}
+.promocode-textfield div::after {
+    border-bottom: none !important;
+}
+.promocode div::before {
+    border: none !important;
+}
+.promocode-textfield div input {
+    font-family: 'VK Sans Display';
+    text-transform: uppercase !important;
+}
+.promocode-btn {
+    height: 100% !important;
+    border-radius: 0 5px 5px 0 !important;
+    box-shadow: none !important;
+    background-color: #396C03 !important;
+    font-family: 'VK Sans Display' !important;
+    letter-spacing: 2px !important;
+}
+.promocode-btn:hover {
+    background-color: #4d9104 !important;
+}
+.cart-options {
+    display: flex;
+    flex-direction: column;
+}
+.cart-checkbox span {
+    color: #ebffd6;
+}
+.cart-checkbox svg {
+    color: #396C03;
+    transition: all 0.3s;
+}
+.cart-checkbox:hover svg {
+    color: #4d9104;
+}
+.formContol-label span {
+    color: #777c83;
+    font-family: "VK Sans Display" !important;
+}
+.currentCart {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.cart-item {
+    height: 145px;
+    border: 1px solid rgb(231, 231, 231);
+    border-radius: 15px;
+    padding: 0 15px 0 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart-item-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 35px;
+}
+.cart-item-image {
+    width: 150px;
+    height: 115px;
+    background-image: url('../../assets/dish.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+.cart-item-title {
+    font-size: 19px;
+    color: #777c83;
+}
+.cart-item-right {
+    width: 275px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+}
+.totalPrice {
+    width: 100%;
+    height: 145px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.totalPrice-text {
+    margin-left: 15px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #4f5257;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.totalPrice-btn {
+    height: calc(100% - 30px);
+    padding: 15px 30px 15px 30px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #396C03;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 19px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+.totalPrice-btn:hover {
+    background-color: #4d9104;
+}
+
+@media screen and (max-width: 770px) {
+    .cartPage {
+        padding: 25px 20px 25px 20px;
+    }
+}
+@media screen and (max-width: 720px) {
+    .cart-item {
+        gap: 15px;
+    }
+    .cart-item-image {
+        display: none;
+    }
+}
+@media screen and (max-width: 570px) {
+    .cart-item-right {
+        gap: 0;
+    }
+    .cart-item {
+        width: auto;
+        height: auto;
+        padding: 15px 15px 15px 15px;
+    }
+    .totalPrice-btn {
+        font-size: 16px;
+        text-align: center;
+        padding: 15px 15px 15px 15px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .cart-item {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .cart-item-title {
+        font-size: 24px;
+        text-align: center;
+    }
+    .cart-item-right {
+        width: 100%;
+        gap: 50px;
+    }
+}
+@media screen and (max-width: 495px) {
+    .totalPrice {
+        height: 115px;
+    }
+    .totalPrice-text {
+        flex-grow: 1;
+    }
+    .totalPrice-btn {
+        flex-grow: 1;
+    }
+}
+@media screen and (max-width: 450px) {
+    .totalPrice {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .totalPrice-text {
+        margin: 0;
+        padding-top: 25px;
+    }
+    .totalPrice-btn {
+        width: calc(100% - 29px);
+        border-radius: 0px 0px 15px 15px;
+        padding: 28px 15px 28px 15px;
+    }
+    .text-aling-center {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 400px) {
+    .promocode-btn {
+        font-size: 12px !important;
+    }
+}

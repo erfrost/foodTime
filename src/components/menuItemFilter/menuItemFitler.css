@@ -1,0 +1,23 @@
+.subCategories-filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.subcat-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #777c83;
+    background-color: rgb(247, 247, 247);
+    padding: 7px 20px 7px 20px;
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 15px;
+    transition: all 0.3s;
+    box-shadow: 0 0 10px #e9f1f1;
+}
+.subcat-link:hover {
+    padding: 7px 30px 7px 30px;
+}

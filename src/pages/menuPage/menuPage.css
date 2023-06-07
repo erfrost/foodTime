@@ -1,0 +1,111 @@
+.menu-main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.menu-padding {
+    width: 1100px;
+    padding: 25px 55px 25px 55px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.categories {
+    max-width: 100%;
+    max-height: 700px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.category-item {
+    min-width: calc(23% + 4px);
+    max-width: calc(23% + 4px);
+    min-height: 160px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-basis: calc(25% - 20px);
+    background-image: url('../../assets/dish.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.category-item-text {
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    font-size: 18px;
+    color: white;
+}
+
+.mobile-categories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding-bottom: 25px;
+}
+.mobile-category-item {
+    width: 100%;
+    height: 200px;
+    background-image: url('../../assets/dish.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.mobile-category-item-text {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: white;
+}
+
+@media screen and (max-width: 1100px) {
+    .menu-padding {
+        width: 86%;
+    }
+    .categories {
+        gap: 10px;
+    }
+    .category-item-text {
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 770px) {
+    .menu-padding {
+        padding: 25px 20px 25px 20px;
+        width: 100%;
+    }
+    .category-item-text {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .menu-padding {
+        width: 95%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .category-item {
+        min-height: 140px;
+    }
+    .category-item-text {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .mobile-category-item-text {
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 410px) {
+    .text-field-search div input {
+        font-size: 16px;
+    }
+}

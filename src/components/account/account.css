@@ -1,0 +1,66 @@
+.account-main {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+.account-login-btn {
+    width: 115px;
+    height: 45px;
+    border-radius: 35px;
+    background-color: #396C03;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.account-login-btn:hover {
+    background-color: #4d9104;
+}
+.cart-btn {
+    width: 45px;
+    height: 45px;
+    background-color: #396C03;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.cart-btn:hover {
+    background-color: #4d9104;
+}
+.cart-icon {
+    width: 55%;
+    height: 55%;
+}
+.cart-count {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #FF8B00;
+    border-radius: 50%;
+    top: 20px;
+    right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+@media screen and (max-width: 770px) {
+    .cart-count {
+        right: 15px;
+    }
+}
